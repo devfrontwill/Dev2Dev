@@ -13,8 +13,8 @@
     color: #FFFFFF;
 }
 
-.cabecalho__link-a:hover{
-    color: #9370DB;
-    text-decoration: underline;
-    font-size: 1.5rem;
+.cabecalho__link-a:hover, .cabecalho__link-a.ativo{
+    color: #fdfdfd;   
+    text-transform: uppercase;
+    border-bottom: 2px solid #0073e6; 
 }
