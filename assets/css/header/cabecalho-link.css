@@ -1,0 +1,20 @@
+.cabecalho__link {
+    display: inline-block;
+    font-size: 1.1rem;    
+    margin: 0.2rem 0.7rem 1.25rem 0.7rem;    
+}
+
+.cabecalho__link:nth-child(5) {
+    margin-top: -1rem;
+    
+}
+
+.cabecalho__link-a {
+    color: #FFFFFF;
+}
+
+.cabecalho__link-a:hover{
+    color: #9370DB;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}

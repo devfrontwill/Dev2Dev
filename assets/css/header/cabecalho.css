@@ -1,0 +1,8 @@
+.cabecalho .container{
+    display: flex;
+    flex-wrap: wrap;    
+    width: 100vw;  
+    justify-content: space-around;
+    text-align: center;
+    box-sizing: border-box;
+}

@@ -2,42 +2,6 @@
     font-family: 'Montserrat', sans-serif;        
 }
 
-.cabecalho .container{
-    display: flex;
-    flex-wrap: wrap;    
-    width: 100vw;  
-    justify-content: space-around;
-    text-align: center;
-    box-sizing: border-box;   
-
-}
-
-.cabecalho__nav{
-    display: flex;
-    position: absolute;
-    
-}
-.cabecalho__link {
-    display: inline-block;
-    font-size: 1.1rem;    
-    margin: 0.2rem 0.7rem 1.25rem 0.7rem;
-    
-}
-
-.cabecalho__link:nth-child(5) {
-    margin-top: -1rem;
-    
-}
-
-.cabecalho__link-a {
-    color: #FFFFFF;
-}
-
-.cabecalho__link-a:hover{
-    color: goldenrod;
-    text-decoration: underline;
-}
-
 .banner {
     width: 100vw;
 }
