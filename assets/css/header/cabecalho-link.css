@@ -4,7 +4,7 @@
     margin: 0.2rem 0.7rem 1.25rem 0.7rem;    
 }
 
-.cabecalho__link:nth-child(5) {
+.cabecalho__link:nth-child(:last-child) {
     margin-top: -1rem;
     
 }

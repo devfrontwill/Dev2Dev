@@ -2,28 +2,3 @@
     background-color: #000;
     
 }
-
-.conteudoPrincipal__titulo {
-        
-}
-
-.conteudoPrincipal__paragrafo {
-    color: #fdfdfd;
-    padding: 1rem;    
-}
-
-.conteudoPrincipal__imagem {
-    float: left;
-    width: 120px;
-    margin: 0 20px 20px 0;
-}
-
-.conteudoPrincipal__imagemRight {
-    float: right;
-    width: 120px;
-    margin: 0 0 20px 20px;
-}
-
-.rodape__imagem {
-    width: 100vw;
-}

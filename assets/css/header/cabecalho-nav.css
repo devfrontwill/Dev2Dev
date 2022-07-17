@@ -1,4 +1,6 @@
 .cabecalho__nav {
     display: flex;
-    position: absolute;    
+    position: absolute;
+    background: #000;
+    opacity: 0.7;
 }
