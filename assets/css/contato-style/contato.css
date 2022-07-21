@@ -1,3 +1,6 @@
 .contato {
     color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 0 1rem 1rem;  
 }

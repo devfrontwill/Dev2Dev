@@ -1,0 +1,15 @@
+.contato__midiaSocial {    
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: top 1.25rem left 1.25rem;
+    padding: 2rem 0 2rem 5rem;
+    margin-bottom: 2rem;    
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+    
+}
+
+.contato__midiaSocial:hover {
+   background-color: #2F4F4F;
+}

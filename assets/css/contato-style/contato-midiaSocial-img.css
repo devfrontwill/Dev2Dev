@@ -1,0 +1,19 @@
+.contato__midiaSocial--whatsapp {
+    background-image: url('../../img/icons8-whatsapp-48.png');
+}
+
+.contato__midiaSocial--email {
+    background-image: url('../../img/icons8-newsletter-48.png');
+}
+
+.contato__midiaSocial--linkedin {
+    background-image: url('../../img/icons8-linkedin-circundado-48.png');
+}
+
+.contato__midiaSocial--instagram {
+    background-image: url('../../img/icons8-instagram-48.png');
+}
+
+.contato__midiaSocial--github {
+    background-image: url('../../img/icons8-github-48.png');
+}
