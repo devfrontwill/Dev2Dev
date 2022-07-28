@@ -1,4 +1,6 @@
 .conteudoPrincipal__paragrafo {
     color: #fdfdfd;
-    padding: 1rem;    
+    padding: 1rem;
+    letter-spacing: .5px; 
+    line-height: 31px;
 }
