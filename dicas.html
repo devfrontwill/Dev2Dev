@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="./assets/css/header/cabecalho-nav.css">
         <link rel="stylesheet" href="./assets/css/header/cabecalho-link.css">
         <link rel="stylesheet" href="./assets/css/main/main.css">        
+        <link rel="stylesheet" href="./assets/css/dicas/dicas.css">
         <link rel="stylesheet" href="./assets/css/footer/rodape.css">
         <link rel="stylesheet" href="./assets/css/footer/rodape-social.css">
         <link rel="stylesheet" href="./assets/css/footer/rodape-midia.css">
@@ -39,9 +40,134 @@
         </header>
 
         <main>
-            <secton>
-                <h1>Dicas & Sintaxes</h1>
-            </secton>
+            <section class="dicas">
+                <h1 class="dicas__titulo">Comandos Git Explicados por um aspirante a estagiario/junior ;p</h1><br>
+                <article class="dicas__container">                 
+                <h3 class="dicas__titulo">Lista de comandos utilzados no Windows terminal e GitBash:</h3><br>
+
+                    <code class="codigo">git init :</code> Cria um repositorio Git padrao, tudo o que for feito de alteração dentro desta pasta que agora é um repositorio Git,  o mesmo irá monitorar/acompanhar.<br><br>
+
+                    <code class="codigo">git init --bare :</code> É utilizado como repositorio remoto, nele nao é permitido realizar commits ou executar outras ações, serve apenas como um local remoto no qual o usuario faz suas alterações no repositorio local (não bare) criado atraves do git init e depois usa o comando git push para enviar as modificações ou o git pull para trazer as modificações feitas por um outro colaborador do mesmo projeto.<br><br>
+
+                    <code class="codigo">git remote :</code> Usado para mostrar seus repositorios remotos existentes.<br><br>
+
+                    <code class="codigo">git remote add :</code> Usado para adicionar o seu projeto a um repositorio remoto, um local para onde enviar sua modificações seja ele uma Url como por exemplo o GitHub ou um servidor remoto local criado através do git --bare. Sua sintaxe funciona da seguinte forma: git remote add + nome do repositorio a ser criado + o caminho ex. C:/Users/Documents/Git... ou http://github.com <br><br>
+
+                    <code class="codigo">git remote -v :</code> Mostra os caminhos dos repositorios existentes.<br><br>
+
+                    <code class="codigo">git clone :</code> Serve para clonar um repositorio, para trazer ele pela primeira vez para sua maquina. Sua sintaxe é:  git clone + o caminho do repositorio a ser clonado.<br><br>
+
+                    <code class="codigo">git push :</code> Utilizado para enviar as modificações do repositorio local para o repositorio remoto. Sua sintaxe é:  git push + o nome do repositorio remoto (aquele que vai receber os arquivos) + o branch de onde está enviando.<br><br>
+
+                    <code class="codigo">git pull :</code> Utilizado para trazer as modificações do repositorio remoto para o repositorio local. Sua sintaxe é: git pull + o nome do repositorio remoto a ser recebido + o branch da ramificação que vai receber.<br><br>
+
+                    <code class="codigo">git branch :</code> Utiliza-se para criar um novo branch(ramo,setor), assim facilitando na organização da construção do projeto. Sua sintaxe é: git branch + o nome da branch a ser criada.<br><br>
+
+                    <code class="codigo">git checkout :</code> Utilizado para navegar/alternar entre as branch. Sua sintaxe é: git checkout + nome da branch que deseja acessar.<br><br>
+
+                    <code class="codigo">gitcheckout -- :</code> Utilizado para desfazer uma alteração que ainda não foi adicionada pelo comando git add  ( exemplo da sintaxe:  git checkout -- index.html )<br><br>
+
+                    <code class="codigo">git reset :</code> Utilizado para desfazer uma alteração que já foi adicionada pelo comando git add ( exemplo da sintaxe: git reset + o estado (ex. HEAD) + o nome do arquivo que deseja desfazer a alteração (ex. index.html) ).<br><br>
+
+                    <code class="codigo">git revert :</code> Usado para desfazer um commit. Sua sintaxe é: git revert + o hash do commit (ex. 97323eed32321). Ele desfaz e gera um outro commit informando o que foi desfeito.<br><br>
+
+                    <code class="codigo">git merge :</code> Serve para unirmos as branchs,por exemplo se temos varias branchs num projeto e ao final queremos unifica-lo à branch main utilizamos o git merge + nome da branch a ser mesclada. Utilizando esta forma, todos os commits feitos da branch que estamos recebendo são perdidos e no lugar delas somente mostra o commit do git merge. Nota-se que devemos estar dentro da branch main para podermos absorver as outras ramificações do projeto.<br><br>
+
+                    <code class="codigo">git rebase :</code> Assim como o merge,  serve para unir as informações, porém com o rebase não perdemos os commits das branchs que estamos recebendo, dito isto, o nosso ultimo commit da branch main fica como ultimo commit, e abaixo dele nos é mostrado os commits da branch que puxamos.<br><br>
+
+                    <code class="codigo">git log --graph :</code> Mostra um grafico de todos os commits feitos em todas as branchs, torna o entendimento mais facil podemos associar até a uma famosa frase "Entendeu ou quer que eu desenhe?" rs.<br><br>
+
+                    <code class="codigo">git status :</code> Mostra o status do repositorio, como por exemplo se foi alterado algum arquivo, se faltar commitar algo etc.<br><br>
+
+                    <code class="codigo">git log :</code> Mostra todos os logs de alterações feitas naquele repositorio.<br><br>
+
+                    <code class="codigo">git log --oneline :</code> Mostra todos os logs de alterações feitas naquele repositorio linha a linha de forma resumida.<br><br>
+
+                    <code class="codigo">git log -p :</code> Mostra todos os logs de alterações feitas naquele repositorio com todos os detalhes, um log mais completo.<br><br>
+
+                    <code class="codigo">git add :</code> Serve para adicionar as alterações feitas num arquivo especifico. Muito útil quando se trabalha com varias branchs em paralelo.<br><br>
+
+                    <code class="codigo">git add . </code> : Serve para adicionar as alterações feitas em todos os arquivos de forma geral. Exemplo que se você fizer alterações no cabeçalho, no rodapé porém trabalha em um unico branch, você pode usar este comando e rapidamente salvar todas alterações, sem ter que ficar digitando, nome de arquivo por arquivo que foi modificado ou criado.<br><br>
+
+                    <code class="codigo">git commit -m :</code> Serve para descrever um alteração feita no projeto/arquivo ou seja toda alteração feita usa-se o "commit -m" para deixar descrito o que foi alterado, para facilitar o trabalho em equipe ou mesmo quando for dar continuidade no projeto se achar mais rápido onde parou tipo um checkpoint.<br><br>
+
+                    <code class="codigo">git config --local user.name "nome do usuario" :</code> Utilizado para definir o usuario que está enviando os commits no projeto em questão.<br><br>
+
+                    <code class="codigo">git config --global user.email "nome do usuario" :</code> Utilizado para definir o email do usuario que está enviando os commits em qualquer projeto realizado no computador em questao.
+                    *((( Para visualizar o nome de usuario e de email que está logado no gitbash, basta utilizar o comando git config user.name e/ou git config user.email )))*<br><br>
+
+                    <code class="codigo">mkdir :</code> Usado para criar pastas no gitbash.<br><br>
+
+                    <code class="codigo">cd :</code> Usado para navegar entre as pastas no gitbash.<br><br>
+
+                    <code class="codigo">q :</code> Utilizado para sair do git log -p.<br><br>
+
+                    <code class="codigo">:x</code> : Utilizado para sair da tela do git merge ou rebase.<br><br>
+
+                    <code class="codigo">git tag -a :</code> Utilizado para criar um release, uma versão inalteravel do projeto. Sua sintaxe é: git tag -a + o nome que deseja dar a sua versão do programa e se quiser adicionar uma mensagem de descrição para deixar mais claro a versao que está sendo disponibilizada é só colocar -m ou seja git tag -a v.1.0.1(sugestao de nome para  a tag)   -m "mensagem de descrição".<br><br>
+
+                    <code class="codigo">git blame :</code> É usado para saber o responsavel por determinado commit, sua sintaxe é: git blame + o nome do arquivo no qual deseja saber os responsaveis pelas alterações.<br><br>
+
+                    <code class="codigo">git show :</code> Mostra todas as alterações aplicadas pelo commit com o hash informado. Sua sintaxe é: <code class="codigo">git show + o hash do commit.</code><br><br>
+
+
+                    <h2 class="codigo__titulo">Entendendo os comandos do GitHub:</h2><br>
+
+                    <code class="codigo">Issue :</code> Utilizado para reportar problemas no codigo, sugerir melhorias no codigo e organizar quaisquer coisas que façam sentido para o projeto.<br><br>
+
+                    <code class="codigo">Pull Requests :</code> Serve para solicitar o envio de alterações no código no qual deseja realizar alterações melhorias e/ou correções.<br><br>
+
+                    <code class="codigo">Forks :</code> Serve para copiar um repositório na qual esta cópia vira um clone do estado atual do repositório, fazendo assim com que você possa experimentar mudanças e features novas sem precisar utilizar o repositório principal e poder realizar as melhorias.<br><br>
+
+                <h3 class="sobre__titulo">Existem vários serviços que disponibilizam a hospedagem de sites de forma gratuita aqui vou disponibilizar uma lista de sites com este serviço: </h3>  
+
+                        <h4 class="sobre__subtitulos">GitHub Pages :</h4>
+                        <p class="dicas__texto">O GitHub Pages é um serviço do GitHub, que permite a hospedagem de sites utilizando HTML/CSS/JS de forma gratuita. Basta enviar os arquivos para o repositório e seguir as instruções dadas pelo GitHub.
+                        O processo é muito simples, mas se você já conhece o Git, então trabalhar com o GitHub Pages ficará ainda mais fácil. Se ainda não conhece, essa é uma boa oportunidade de aprender a usar a ferramenta, que é padrão de mercado quando se trata de controle de versões em desenvolvimento web e aplicações em geral.
+                        Embora o GitHub Pages seja uma excelente opção para sites estáticos, ele não dá suporte a linguagens de back-end, como PHP, Ruby, Python. Os sites hospedados no GitHub Pages também estão sujeitos a alguns limites, algo que não deve ser um problema a menos que o seu site se torne extremamente popular.</p>
+
+                        <h4 class="sobre__subtitulos">GitLab Pages</h4>
+                        <p class="dicas__texto">Assim como o GitHub, o GitLab também oferece um serviço para hospedagem de sites estáticos, que utilizam somente HTML/CSS/JS. O processo para o envio dos arquivos é semelhante ao do GitHub, e o processo é bem explicado na documentação do GitLab. No entanto, o processo não é tão intuitivo quanto no GitHub, e isso pode ser um impedimento para quem não está familiarizado com o Git.
+                        Diferente do GitHub Pages, o GitLab não possui tantos limites nos sites hospedados, como limites de banda. Para os sites hospedados no GitLab Pages existe somente o limite de 1GB para os arquivos da página e até 10GB para os arquivos do repositório de forma geral.</p>
+
+                        <h4 class="sobre__subtitulos">BitBucket Pages</h4>
+                        <p class="dicas__texto">O BitBucket também oferece uma hospedagem gratuita para sites estáticos, o BitBucket Pages. Para publicar o site no BitBucket Pages, é necessário criar um repositório e enviar os arquivos HTML/CSS/JS.
+                        O processo para a configuração e utilização do BitBucket Pages está descrito na documentação da plataforma. Assim como no GitLab Pages, o processo de publicação das páginas não é tão intuitivo quanto no GitHub, e pode exigir maior familiaridade com o Git e a plataforma do BitBucket.
+                        As páginas hospedadas no BitBucket Pages ficam em cache no servidor por 15 minutos, logo, você terá que esperar um pouco para visualizar as mudanças no site depois de enviado. O BitBucket não informa limites de armazenamento ou banda para o BitBucket Pages especificamente, mas consideração os limites do próprio repositório conclui-se que é de 1GB.
+                        Hospedagem para Sites Estáticos
+                        Se você quer hospedar um site estático, existem alguns serviços criados especialmente para hospedar sites que utilizam somente arquivos HTML/CSS/JS. Esses serviços são conhecidos como serviços de hospedagem para sites estáticos, e podem ser utilizados para sites estáticos e aplicações Web em JavaScript.</p>
+
+                        <h4 class="sobre__subtitulos">Surge</h4>
+                        <p class="dicas__texto">Surge disponibiliza a hospedagem de sites estáticos com domínio personalizado e certificado SSL de forma gratuita. Para quem quer hospedagem um site estático simples, a plataforma da Surge é uma excelente opção.
+                        Embora a utilização do Surge é por meio de um programa com interface em linha de comando, a utilização é muito simples, basta digitar um único comando para publicar o site na Web.</p>
+
+                        <h4 class="sobre__subtitulos">BitBaloon</h4>
+                        <p class="dicas__texto">BitBaloon é uma hospedagem de sites estáticos simples e intuitiva - basta arrastar e soltar os arquivos do site para deixá-lo disponível na Web.
+                        A limitação do BitBaloon no plano gratuito se referre a utilização de um domínio próprio. Se você tiver um domínio registrado e quiser utilizar no seu site pago, será necessário fazer um upgrade para um plano pago.
+                        No BitBaloon, recursos como certificado SSL e CDN estão disponíveis somente nos planos pagos.</p>
+
+                        <h4 class="sobre__subtitulos">Netlify</h4>
+                        <p class="dicas__texto">Com a hospedagem de sites estáticos da Netlify é possível hospedar projetos pessoais ou comerciais, com CDN e certificado SSL.
+                        A hospedagem gratuita da Netlify também oferece recursos para trabalhar com formulários, que geralmente é uma limitação nos sites estáticos.</p>
+
+                        <h4 class="sobre__subtitulos">000webhost</h4>
+                        <p class="dicas__texto">000webhost é bastante conhecida por oferecer serviços de hospedagem de sites há bastante tempo. Além de poder hospedar um site estático na 000webhost, também é possível hospedar sites dinâmicos que utilizam a linguagem PHP.
+                        O envio dos arquivos é de forma convencional - utilizando um cliente FTP, como o FileZilla, ou um gerenciador de arquivos Web, que é disponibilizado pela 000webhost.
+                        No entanto, a 000webhost possui algumas limitações de armazenamento e o servidor de hospedagem entra em um “modo de descanso” durante 1 hora por dia, o que deixa o site inacessível dentro deste período.</p>
+
+                        <h4 class="sobre__subtitulos">Conclusão</h4>
+                        <p class="dicas__texto">Existem várias opções para hospedar um site estático feito com HTML/CSS/JS, são muitas as ferramentas e tecnologias envolvidas para aprender. Como várias soluções são gratuitas, há sempre a possibilidade testar e experimentar os recursos de cada uma.<br>
+                        Se você quer aprender ou está aprendendo sobre o Git, uma das opções que envolvem essa tecnologia pode ser o ideal. Está entrando no universo de back-end ou quer ser tornar um full-stack developer?
+                        Nós ajudamos você a encontrar a melhor hospedagem de sites que dê suporte às tecnologias de front-end e back-end com as quais você pretende desenvolver seus sites e aplicações Web.
+                        Busque aprender sobre as ferramentas e tecnologias web que estão sempre em constante atualização!</p><br><br>
+
+                    <h3 class="sobre__titulo">Unidades de medidas:</h3><br>
+
+                        <code class="codigo">rem :</code> É uma unidade relativa à propriedade font-size da tag <code class="codigo">html</code> que é a tag /root/raiz de todo o documento HTML, é utilizado quando se quer aplicar a configuração para toda a pagina. E tambem por se adaptar para cada navegador, se um navegador possui um font size padrao de 16px, 1rem terá este valor e se outro navegador tem 15px como padrao ele tera esse valor, fazendo com que as suas configurações sejam equivalentes ao font size padrao de cada navegador e por esse motivo se torna adaptavel para qualquer browser.<br><br>
+
+                        <code class="codigo">em :</code> É uma unidade relativa à propriedade font-size de uma tag mãe por exemplo uma tag <code class="codigo">main</code>, utilizando "em" dentro dela, será aplicado para todos os elementos dentro deste bloco.
+                </article>
+            </section>
         </main>
 
         <footer class="rodape">
@@ -65,6 +191,6 @@
                 </ul>
             </nav>
             <p class="copyright">&copy; Copyright Dev2Dev - 2022 All rights reserved</p>
-        </footer>     
+        </footer>
     </body>
 </html>

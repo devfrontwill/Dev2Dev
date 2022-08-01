@@ -1,0 +1,18 @@
+.dicas {
+    color: #fdfdfd;
+}
+
+.dicas__container {
+    margin: 1px;
+}
+
+.codigo {
+    background-color: #4f52528a;
+    border: 1px solid #4f52528a;
+    
+}
+
+.dicas__texto {
+    letter-spacing: .5px; 
+    line-height: 22px;
+}
