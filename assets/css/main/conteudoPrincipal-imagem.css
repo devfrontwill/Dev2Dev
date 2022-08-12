@@ -9,3 +9,21 @@
     width: 120px;
     margin: 0 0 20px 20px;
 }
+
+@media screen and (min-width: 768px) {
+    .conteudoPrincipal__imagem {
+        width: 220px;
+    }
+    .conteudoPrincipal__imagemRight {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudoPrincipal__imagem {
+        width: 300px;
+    }
+    .conteudoPrincipal__imagemRight {
+        width: 300px;
+    }
+}

@@ -1,6 +1,20 @@
-.cabecalho__nav {
-    display: flex;
+.cabecalho__nav {    
     position: absolute;
     background: #000;
     opacity: 0.7;
+    display: inline;
+    width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__nav {
+        height: 6vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__nav {
+        height: 10vh;
+    }
+    
 }

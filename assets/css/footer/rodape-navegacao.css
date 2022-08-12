@@ -1,5 +1,6 @@
 .rodape__navegacao {
     text-align: center;
     line-height: 3;
-    border-bottom: 1px solid #fdfdfd;  
+    border-bottom: 1px solid #fdfdfd;
+    width: 100vw;
 }

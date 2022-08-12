@@ -1,8 +1,6 @@
 .cabecalho {
     display: flex;
     flex-wrap: wrap;    
-    width: 100vw;  
-    justify-content: space-around;
-    text-align: center;
-    box-sizing: border-box;
+    width: 100vw;      
+    text-align: center;    
 }

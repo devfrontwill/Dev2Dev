@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) {
+    .cabecalho__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+}

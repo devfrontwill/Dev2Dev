@@ -4,3 +4,17 @@
     letter-spacing: .5px; 
     line-height: 31px;
 }
+
+@media screen and (min-width: 768px) {
+    .conteudoPrincipal__paragrafo {
+        font-size: 1.2em;
+        letter-spacing: 2px;        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudoPrincipal__paragrafo {
+        font-size: 1.4em;
+        line-height: 35px;
+    }
+}

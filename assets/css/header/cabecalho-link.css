@@ -1,20 +1,37 @@
-.cabecalho__link {
+.cabecalho__item {
     display: inline-block;
     font-size: 1.1rem;    
     margin: 0.2rem 0.7rem 1.25rem 0.7rem;    
 }
 
-.cabecalho__link:nth-child(:last-child) {
+.cabecalho__item:nth-child(:last-child) {
     margin-top: -1rem;
     
 }
 
-.cabecalho__link-a {
+.cabecalho__item--a {
     color: #FFFFFF;
 }
 
-.cabecalho__link-a:hover, .cabecalho__link-a.ativo{
+.cabecalho__item--a:hover, .cabecalho__item--a.ativo{
     color: #fdfdfd;   
     text-transform: uppercase;
     border-bottom: 2px solid #0073e6; 
+}
+
+@media  screen and (min-width: 768px) {
+    .cabecalho__item {
+        font-size: 1.8em;
+        margin-top: 1rem;              
+    }    
+    .cabecalho__item {
+        font-size: 1.5em;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    .cabecalho__item {
+        font-size: 1.8em;
+        margin-top: 1rem;              
+    }
 }
