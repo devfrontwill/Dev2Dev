@@ -5,16 +5,3 @@
     display: inline;
     width: 100vw;
 }
-
-@media screen and (min-width: 768px) {
-    .cabecalho__nav {
-        height: 6vh;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .cabecalho__nav {
-        height: 10vh;
-    }
-    
-}

@@ -2,5 +2,6 @@
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    padding: .5rem 0 1rem 1rem;  
+    padding: .5rem 0 1rem 1rem;
+    justify-content: center;    
 }

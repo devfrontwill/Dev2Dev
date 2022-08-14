@@ -1,5 +1,20 @@
 .sobre__texto {
-    padding: 1rem;
+    padding: 1rem 2rem;
     letter-spacing: .5px; 
     line-height: 31px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__texto {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre__texto {
+        font-size: 1.2em;
+        line-height: 35px;
+    }
 }

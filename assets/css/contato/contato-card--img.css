@@ -1,19 +1,19 @@
-.contato__midiaSocial--whatsapp {
+.contato__card--whatsapp {
     background-image: url('../../img/icons8-whatsapp-48.png');
 }
 
-.contato__midiaSocial--email {
+.contato__card--email {
     background-image: url('../../img/icons8-newsletter-48.png');
 }
 
-.contato__midiaSocial--linkedin {
+.contato__card--linkedin {
     background-image: url('../../img/icons8-linkedin-circundado-48.png');
 }
 
-.contato__midiaSocial--instagram {
+.contato__card--instagram {
     background-image: url('../../img/icons8-instagram-48.png');
 }
 
-.contato__midiaSocial--github {
+.contato__card--github {
     background-image: url('../../img/icons8-github-48.png');
 }

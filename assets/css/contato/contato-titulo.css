@@ -1,7 +1,7 @@
 .contato__titulo {    
-    padding: 0 1rem 1rem 0;
+    margin: 2.5rem;
     font-weight: 400;
     font-style: italic;
-    text-align: left;
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;    
 }

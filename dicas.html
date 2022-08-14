@@ -50,87 +50,87 @@
             <section class="dicas">
                 <h1 class="dicas__titulo">Tutoriais, dicas e comandos Git/Github explicados por um Estagiário:</h1><br>
                 <article class="dicas__container">                 
-                <h2 class="dicas__titulo--h3">//Lista de comandos utilizados no Git e Windows Terminal//</h2><br>
+                <h2 class="dicas__titulo--h2">//Lista de comandos utilizados no Git e Windows Terminal//</h2><br>
 
-                    <code class="dicas__codigo">git init :</code> Cria um repositório Git padrão, tudo o que for feito de alteração dentro desta pasta que agora é um repositorio Git,  o mesmo irá monitorar/acompanhar.<br><br>
+                    <code class="dicas__codigo">git init :</code> Cria um repositório Git padrão, tudo o que for feito de alteração dentro desta pasta que agora é um repositorio Git,  o mesmo irá monitorar/acompanhar.<br><br><br><br>
 
-                    <code class="dicas__codigo">git init --bare :</code> É utilizado como repositório remoto local da própria máquina ou servidor, nele não é permitido realizar commits ou executar outras ações. Serve apenas como um local remoto no qual o usuário salva suas alterações, sem precisar enviar para o Github. Você inicializa um repositório como bare quando deseja que ele seja o respositório central.<br><br>
+                    <code class="dicas__codigo">git init --bare :</code> É utilizado como repositório remoto local da própria máquina ou servidor, nele não é permitido realizar commits ou executar outras ações. Serve apenas como um local remoto no qual o usuário salva suas alterações, sem precisar enviar para o Github. Você inicializa um repositório como bare quando deseja que ele seja o respositório central.<br><br><br><br>
 
-                    <code class="dicas__codigo">git remote :</code> Usado para mostrar seus repositórios remotos existentes.<br><br>
+                    <code class="dicas__codigo">git remote :</code> Usado para mostrar seus repositórios remotos existentes.<br><br><br><br>
 
-                    <code class="dicas__codigo">git remote add :</code> Usado para adicionar o seu projeto a um repositório remoto, um local para onde enviar sua modificações seja ele uma Url como por exemplo o GitHub ou um servidor remoto local criado através do git --bare. Sua sintaxe funciona da seguinte forma: <code class="dicas__codigo">git remote add + nome do repositorio a ser criado + o caminho</code> ex. <em>C:/Users/Documents/Git... ou http://github.com/...</em> <br><br>
+                    <code class="dicas__codigo">git remote add :</code> Usado para adicionar o seu projeto a um repositório remoto, um local para onde enviar sua modificações seja ele uma Url como por exemplo o GitHub ou um servidor remoto local criado através do git --bare. Sua sintaxe funciona da seguinte forma: <code class="dicas__codigo">git remote add + nome do repositorio a ser criado + o caminho</code> ex. <em>C:/Users/Documents/Git... ou http://github.com/...</em> <br><br><br><br>
 
-                    <code class="dicas__codigo">git remote -v :</code> Mostra os caminhos dos repositórios existentes.<br><br>
+                    <code class="dicas__codigo">git remote -v :</code> Mostra os caminhos dos repositórios existentes.<br><br><br><br>
 
-                    <code class="dicas__codigo">git clone :</code> Serve para clonar um repositório, para trazer ele pela primeira vez para sua máquina. Sua sintaxe é:  git clone + o caminho do repositório a ser clonado.<br><br>
+                    <code class="dicas__codigo">git clone :</code> Serve para clonar um repositório, para trazer ele pela primeira vez para sua máquina. Sua sintaxe é:  git clone + o caminho do repositório a ser clonado.<br><br><br><br>
+<br><br>
+                    <code class="dicas__codigo">git push :</code> Utilizado para enviar as modificações do repositório local para o repositório remoto. Sua sintaxe é:  git push + o nome do repositório remoto (aquele que vai receber os arquivos) + o branch de onde está enviando.<br><br><br><br>
 
-                    <code class="dicas__codigo">git push :</code> Utilizado para enviar as modificações do repositório local para o repositório remoto. Sua sintaxe é:  git push + o nome do repositório remoto (aquele que vai receber os arquivos) + o branch de onde está enviando.<br><br>
+                    <code class="dicas__codigo">git pull :</code> Utilizado para trazer as modificações do repositório remoto para o repositório local. Sua sintaxe é: git pull + o nome do repositório remoto a ser recebido + o branch que vai receber.<br><br><br><br>
 
-                    <code class="dicas__codigo">git pull :</code> Utilizado para trazer as modificações do repositório remoto para o repositório local. Sua sintaxe é: git pull + o nome do repositório remoto a ser recebido + o branch que vai receber.<br><br>
+                    <code class="dicas__codigo">git branch :</code> Utiliza-se para criar um novo branch(ramo,setor), assim facilitando na organização da construção do projeto. Sua sintaxe é: git branch + o nome da branch a ser criada.<br><br><br><br>
 
-                    <code class="dicas__codigo">git branch :</code> Utiliza-se para criar um novo branch(ramo,setor), assim facilitando na organização da construção do projeto. Sua sintaxe é: git branch + o nome da branch a ser criada.<br><br>
+                    <code class="dicas__codigo">git checkout :</code> Utilizado para navegar/alternar entre as branch. Sua sintaxe é: git checkout + nome da branch que deseja acessar.<br><br><br><br>
 
-                    <code class="dicas__codigo">git checkout :</code> Utilizado para navegar/alternar entre as branch. Sua sintaxe é: git checkout + nome da branch que deseja acessar.<br><br>
+                    <code class="dicas__codigo">gitcheckout -- :</code> Utilizado para desfazer uma alteração que ainda não foi adicionada pelo comando git add  ( exemplo da sintaxe:  <code class="dicas__codigo">git checkout -- index.html</code> )<br><br><br><br>
 
-                    <code class="dicas__codigo">gitcheckout -- :</code> Utilizado para desfazer uma alteração que ainda não foi adicionada pelo comando git add  ( exemplo da sintaxe:  <code class="dicas__codigo">git checkout -- index.html</code> )<br><br>
+                    <code class="dicas__codigo">git reset :</code> Utilizado para desfazer uma alteração que já foi adicionada pelo comando git add ( exemplo da sintaxe: <code class="dicas__codigo">git reset + o estado (ex. HEAD) + o nome do arquivo</code> que deseja desfazer a alteração (<em>ex. index</em>.html).<br><br><br><br>
 
-                    <code class="dicas__codigo">git reset :</code> Utilizado para desfazer uma alteração que já foi adicionada pelo comando git add ( exemplo da sintaxe: <code class="dicas__codigo">git reset + o estado (ex. HEAD) + o nome do arquivo</code> que deseja desfazer a alteração (<em>ex. index</em>.html).<br><br>
+                    <code class="dicas__codigo">git revert :</code> Usado para desfazer um commit. Sua sintaxe é: <code class="dicas__codigo">git revert + o hash do commit</code> (<em>ex. 97323eed32321</em>). Ele desfaz e gera um outro commit informando o que foi desfeito.<br><br><br><br>
 
-                    <code class="dicas__codigo">git revert :</code> Usado para desfazer um commit. Sua sintaxe é: <code class="dicas__codigo">git revert + o hash do commit</code> (<em>ex. 97323eed32321</em>). Ele desfaz e gera um outro commit informando o que foi desfeito.<br><br>
+                    <code class="dicas__codigo">git merge :</code> Serve para unirmos as branchs,por exemplo se temos várias branchs num projeto e ao final queremos unificá-lo à branch main utilizamos o <code class="dicas__codigo">git merge + nome da branch</code> a ser mesclada. Utilizando esta forma, todos os commits feitos da branch que estamos recebendo são perdidos e no lugar delas somente mostrará o commit do git merge. Nota-se que devemos estar dentro da branch main para podermos absorver as outras ramificações do projeto.<br><br><br><br>
 
-                    <code class="dicas__codigo">git merge :</code> Serve para unirmos as branchs,por exemplo se temos várias branchs num projeto e ao final queremos unificá-lo à branch main utilizamos o <code class="dicas__codigo">git merge + nome da branch</code> a ser mesclada. Utilizando esta forma, todos os commits feitos da branch que estamos recebendo são perdidos e no lugar delas somente mostrará o commit do git merge. Nota-se que devemos estar dentro da branch main para podermos absorver as outras ramificações do projeto.<br><br>
+                    <code class="dicas__codigo">git rebase :</code> Assim como o merge, serve para unir as informações, porém com o rebase não perdemos os commits das branchs que estamos recebendo, dito isto, o nosso último commit da branch main fica como último commit, e abaixo dele nos é mostrado os commits da branch que puxamos.<br><br><br><br>
 
-                    <code class="dicas__codigo">git rebase :</code> Assim como o merge, serve para unir as informações, porém com o rebase não perdemos os commits das branchs que estamos recebendo, dito isto, o nosso último commit da branch main fica como último commit, e abaixo dele nos é mostrado os commits da branch que puxamos.<br><br>
+                    <code class="dicas__codigo">git log --graph :</code> Mostra um gráfico de todos os commits feitos em todas as branchs, torna o entendimento mais fácil podemos associar até a uma famosa frase: "Entendeu ou quer que eu desenhe?" ^^.<br><br><br><br>
 
-                    <code class="dicas__codigo">git log --graph :</code> Mostra um gráfico de todos os commits feitos em todas as branchs, torna o entendimento mais fácil podemos associar até a uma famosa frase: "Entendeu ou quer que eu desenhe?" ^^.<br><br>
+                    <code class="dicas__codigo">git status :</code> Mostra o status do repositório, como por exemplo se foi alterado algum arquivo, se falta commitar algo etc.<br><br><br><br>
 
-                    <code class="dicas__codigo">git status :</code> Mostra o status do repositório, como por exemplo se foi alterado algum arquivo, se falta commitar algo etc.<br><br>
+                    <code class="dicas__codigo">git log :</code> Mostra todos os logs de alterações feitas naquele repositório.<br><br><br><br>
 
-                    <code class="dicas__codigo">git log :</code> Mostra todos os logs de alterações feitas naquele repositório.<br><br>
+                    <code class="dicas__codigo">git log --oneline :</code> Mostra todos os logs de alterações feitas naquele repositório linha a linha de forma resumida.<br><br><br><br>
 
-                    <code class="dicas__codigo">git log --oneline :</code> Mostra todos os logs de alterações feitas naquele repositório linha a linha de forma resumida.<br><br>
+                    <code class="dicas__codigo">git log -p :</code> Mostra todos os logs de alterações feitas naquele repositório com todos os detalhes, um log mais completo. <br><br><br><br>
 
-                    <code class="dicas__codigo">git log -p :</code> Mostra todos os logs de alterações feitas naquele repositório com todos os detalhes, um log mais completo.<br><br>
+                    <code class="dicas__codigo">git add :</code> Serve para adicionar as alterações feitas num arquivo específico. Muito útil quando se trabalha com várias branchs em paralelo.<br><br><br><br>
 
-                    <code class="dicas__codigo">git add :</code> Serve para adicionar as alterações feitas num arquivo específico. Muito útil quando se trabalha com várias branchs em paralelo.<br><br>
+                    <code class="dicas__codigo">git add . </code> : Serve para adicionar as alterações feitas em todos os arquivos de forma geral. Exemplo, se você fizer alterações no cabeçalho, no rodapé porém trabalha em um único branch, você pode usar este comando e rapidamente salvar todas alterações, sem ter que ficar digitando, nome de arquivo por arquivo que foi modificado ou criado.<br><br><br><br>
 
-                    <code class="dicas__codigo">git add . </code> : Serve para adicionar as alterações feitas em todos os arquivos de forma geral. Exemplo, se você fizer alterações no cabeçalho, no rodapé porém trabalha em um único branch, você pode usar este comando e rapidamente salvar todas alterações, sem ter que ficar digitando, nome de arquivo por arquivo que foi modificado ou criado.<br><br>
+                    <code class="dicas__codigo">git commit -m :</code> Serve para descrever um alteração feita no projeto/arquivo ou seja toda alteração feita usa-se o "commit -m" para deixar descrito o que foi alterado, para facilitar o trabalho em equipe ou mesmo quando for dar continuidade no projeto se achar mais rápido onde parou tipo um checkpoint.<br><br><br><br>
 
-                    <code class="dicas__codigo">git commit -m :</code> Serve para descrever um alteração feita no projeto/arquivo ou seja toda alteração feita usa-se o "commit -m" para deixar descrito o que foi alterado, para facilitar o trabalho em equipe ou mesmo quando for dar continuidade no projeto se achar mais rápido onde parou tipo um checkpoint.<br><br>
+                    <code class="dicas__codigo">git config --local user.name "nome do usuário" :</code> Utilizado para definir o usuário que está enviando as alterações no projeto em questão.<br><br><br><br>
 
-                    <code class="dicas__codigo">git config --local user.name "nome do usuário" :</code> Utilizado para definir o usuário que está enviando as alterações no projeto em questão.<br><br>
+                    <code class="dicas__codigo">git config --global user.name "nome do usuário" :</code> Utilizado para definir o usuário que está enviando as alterações em qualquer projeto realizado no computador em questão.<br><br><br><br>
 
-                    <code class="dicas__codigo">git config --global user.name "nome do usuário" :</code> Utilizado para definir o usuário que está enviando as alterações em qualquer projeto realizado no computador em questão.
-
-                    <code class="dicas__codigo">git config --local user.email "nome do usuário" :</code> Utilizado para definir o email do usuario que está enviando as alterações no projeto em questão.
+                    <code class="dicas__codigo">git config --local user.email "nome do usuário" :</code> Utilizado para definir o email do usuario que está enviando as alterações no projeto em questão.<br><br><br><br>
 
                     <code class="dicas__codigo">git config --global user.email "nome do usuário" :</code> Utilizado para definir o email do usuário que está enviando as alterações em qualquer projeto realizado no computador em questão.
-                    <em>Para visualizar o nome de usuario e de email que está logado no gitbash, basta utilizar o comando git config user.name e/ou git config user.email</em><br><br>
+                    <em>Para visualizar o nome de usuario e de email que está logado no gitbash, basta utilizar o comando git config user.name e/ou git config user.email</em><br><br><br><br>
 
-                    <code class="dicas__codigo">mkdir + "nome da pasta":</code> Usado para criar pastas.<br><br>
+                    <code class="dicas__codigo">mkdir + "nome da pasta":</code> Usado para criar pastas.<br><br><br><br>
 
-                    <code class="dicas__codigo">cd :</code> Usado para navegar entre as pastas.<br><br>
+                    <code class="dicas__codigo">cd :</code> Usado para navegar entre as pastas.<br><br><br><br>
 
-                    <code class="dicas__codigo">q :</code> Utilizado para sair do <code class="dicas__codigo">git log -p</code>.<br><br>
+                    <code class="dicas__codigo">q :</code> Utilizado para sair do <code class="dicas__codigo">git log -p</code>.<br><br><br><br>
 
-                    <code class="dicas__codigo">:x</code> : Utilizado para sair da tela do git <strong>merge</strong> ou <strong>rebase</strong><br><br>
+                    <code class="dicas__codigo">:x</code> : Utilizado para sair da tela do git <strong>merge</strong> ou <strong>rebase</strong><br><br><br><br>
 
-                    <code class="dicas__codigo">git tag -a :</code> Utilizado para criar uma release, uma versão inalterável do projeto. Sua sintaxe é: <code class="dicas__codigo">git tag -a + o nome que deseja dar a sua versão do programa</code> e se quiser adicionar uma mensagem de descrição para deixar mais claro a versao que está sendo disponibilizada é só colocar "-m" ou seja <code class="dicas__codigo">git tag -a v1.0.1(sugestao de nome para  a tag)   -m "mensagem de descrição"</code>.<br><br>
+                    <code class="dicas__codigo">git tag -a :</code> Utilizado para criar uma release, uma versão inalterável do projeto. Sua sintaxe é: <code class="dicas__codigo">git tag -a + o nome que deseja dar a sua versão do programa</code> e se quiser adicionar uma mensagem de descrição para deixar mais claro a versao que está sendo disponibilizada é só colocar "-m" ou seja <code class="dicas__codigo">git tag -a v1.0.1(sugestao de nome para  a tag)   -m "mensagem de descrição"</code>.<br><br><br><br>
 
-                    <code class="dicas__codigo">git blame :</code> É usado para saber o responsavel por determinado commit, sua sintaxe é: <code class="dicas__codigo">git blame + o nome do arquivo</code> no qual deseja saber os responsaveis pelas alterações.<br><br>
+                    <code class="dicas__codigo">git blame :</code> É usado para saber o responsavel por determinado commit, sua sintaxe é: <code class="dicas__codigo">git blame + o nome do arquivo</code> no qual deseja saber os responsaveis pelas alterações.<br><br><br><br>
 
-                    <code class="dicas__codigo">git show :</code> Mostra todas as alterações aplicadas pelo commit com o hash informado. Sua sintaxe é: <code class="dicas__codigo">git show + o hash do commit.</code><br><br>
+                    <code class="dicas__codigo">git show :</code> Mostra todas as alterações aplicadas pelo commit com o hash informado. Sua sintaxe é: <code class="dicas__codigo">git show + o hash do commit.</code><br><br><br><br>
 
 
                     <h2 class="dicas__titulo--h2">//Entendendo os comandos do GitHub//</h2><br>
 
-                    <code class="dicas__codigo">Issue :</code> Utilizado para reportar problemas no código, sugerir melhorias e organizar quaisquer coisas que façam sentido para o projeto.<br><br>
+                    <code class="dicas__codigo">Issue :</code> Utilizado para reportar problemas no código, sugerir melhorias e organizar quaisquer coisas que façam sentido para o projeto.<br><br><br><br>
 
-                    <code class="dicas__codigo">Pull Requests :</code> Serve para solicitar o envio de alterações no código no qual deseja realizar alterações melhorias e/ou correções.<br><br>
+                    <code class="dicas__codigo">Pull Requests :</code> Serve para solicitar o envio de alterações no código no qual deseja realizar alterações melhorias e/ou correções.<br><br><br><br>
 
-                    <code class="dicas__codigo">Forks :</code> Serve para copiar um repositório na qual esta cópia vira um clone do estado atual do repositório, fazendo assim com que você possa experimentar mudanças e features(recursos) novas sem precisar utilizar o repositório principal e poder realizar as melhorias.<br><br>
+                    <code class="dicas__codigo">Forks :</code> Serve para copiar um repositório na qual esta cópia vira um clone do estado atual do repositório, fazendo assim com que você possa experimentar mudanças e features(recursos) novas sem precisar utilizar o repositório principal e poder realizar as melhorias.<br><br><br><br>
 
-                <h3 class="dicas__titulo--h3">//Existem vários serviços que disponibilizam a hospedagem de sites de forma gratuita aqui vou disponibilizar uma lista de sites com estes serviços// </h3><br>
+                <h2 class="dicas__titulo--h2">//Existem vários serviços que disponibilizam a hospedagem de sites de forma gratuita aqui vou disponibilizar uma lista de sites com estes serviços// </h2><br>
 
                         <h4 class="dicas__subtitulos"><a class="dicas__subtitulos--ancora" href="https://pages.github.com/" target="_blank">GitHub Pages</h4></a>
                         <p class="dicas__texto">O GitHub Pages é um serviço do GitHub, que permite a hospedagem de sites utilizando HTML|CSS|JavaScript gratuitamente. Basta enviar os arquivos para o repositório e seguir as instruções dadas pelo GitHub.
@@ -175,11 +175,11 @@
 
             <nav class="rodape__navegacao">
                 <ul>
-                    <li class="rodape__link"><a class="rodape__link-a" href="index.html">Home</a></li>
-                    <li class="rodape__link"><a class="rodape__link-a" href="dicas.html">Dicas e Sintaxes</a></li>
-                    <li class="rodape__link"><a class="rodape__link-a" href="colaboradores.html">Colaboradores</a></li>
-                    <li class="rodape__link"><a class="rodape__link-a" href="sobre.html">Sobre</a></li>
-                    <li class="rodape__link"><a class="rodape__link-a" href="contato.html">Contato</a></li>
+                    <li class="rodape__lista"><a class="rodape__lista--a" href="index.html">Home</a></li>
+                    <li class="rodape__lista"><a class="rodape__lista--a" href="dicas.html">Dicas e Sintaxes</a></li>
+                    <li class="rodape__lista"><a class="rodape__lista--a" href="colaboradores.html">Colaboradores</a></li>
+                    <li class="rodape__lista"><a class="rodape__lista--a" href="sobre.html">Sobre</a></li>
+                    <li class="rodape__lista"><a class="rodape__lista--a" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
             <p class="copyright">&copy; Copyright Dev2Dev - 2022 All rights reserved</p>

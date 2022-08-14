@@ -1,4 +1,11 @@
 .sobre__imagem {
-    width: 100vw;
-    margin-top: .5rem;
+    width: 100vw;    
+    margin-top: 2rem;    
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre__imagem {
+        width: 70vw;
+        height: 90vh;    
+    }    
 }

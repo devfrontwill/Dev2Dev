@@ -7,14 +7,14 @@
 
 @media screen and (min-width: 768px) {
     .conteudoPrincipal__paragrafo {
-        font-size: 1.2em;
+        font-size: 1em;
         letter-spacing: 2px;        
     }
 }
 
 @media screen and (min-width: 1024px) {
     .conteudoPrincipal__paragrafo {
-        font-size: 1.4em;
+        font-size: 1.2em;
         line-height: 35px;
     }
 }

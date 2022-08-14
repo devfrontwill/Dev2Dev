@@ -1,18 +1,24 @@
-.rodape__link {
+.rodape__lista {
     display: inline-block;
     font-size: 1.1rem;    
     margin: 0 .5rem .7rem;  
 }
 
-.rodape__link:nth-child(:last-child) {
+.rodape__lista:nth-child(:last-child) {
     margin-top: -1rem;
     
 }
 
-.rodape__link-a {
+.rodape__lista--a {
     color: #fff;   
 }
 
-.rodape__link-a:hover {   
+.rodape__lista--a:hover {   
     border-bottom: 2px solid #0073e6; 
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape__lista {
+        font-size: 1.5rem;
+    }
 }

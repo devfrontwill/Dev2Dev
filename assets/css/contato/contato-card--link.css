@@ -1,0 +1,14 @@
+.contato__card--ancora {
+    color: #0073e6;
+}
+
+.contato__card--ancora:hover {
+    color: #fdfdfd
+}
+
+@media screen and (min-width: 1024px) {
+    .contato__card--ancora {
+        font-size: 1.5rem;
+    }
+    
+}
