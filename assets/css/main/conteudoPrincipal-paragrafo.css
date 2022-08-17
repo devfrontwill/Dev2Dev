@@ -3,12 +3,13 @@
     padding: 1rem;
     letter-spacing: .5px; 
     line-height: 31px;
+    padding: 2rem;
 }
 
 @media screen and (min-width: 768px) {
     .conteudoPrincipal__paragrafo {
         font-size: 1em;
-        letter-spacing: 2px;        
+        letter-spacing: 2px;            
     }
 }
 
