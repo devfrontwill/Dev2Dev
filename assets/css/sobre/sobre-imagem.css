@@ -1,11 +1,21 @@
 .sobre__imagem {
-    width: 100vw;    
+    width: 60vw;    
     margin-top: 2rem;
+    border-radius: 32px;
+    box-shadow: 0 0 65px 0 rgba(7, 33, 231, 0.972);
+    border: 1px solid rgb(7, 33, 231);
 }
 
 @media screen and (min-width: 1024px) {
     .sobre__imagem {
-        width: 70vw;
-        height: 145vh;
+        width: 50vw;
+       
+    }    
+}
+
+@media screen and (min-width: 1300px) {
+    .sobre__imagem {
+        width: 35vw;
+       
     }    
 }
