@@ -4,12 +4,15 @@
 
 .banner {
     width: 100vw;
+    object-fit: fill;
+    
 }
 
 @media screen and (min-width: 1024px) {
     .banner {
-        width: 100vw;
+        width: 100vw;        
         height: 100vh;
+        
     }
        
 }

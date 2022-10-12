@@ -1,7 +1,7 @@
 .cabecalho__nav {    
-    position: absolute;
+    position: fixed;
     background: #000;
-    opacity: 0.7;
+    opacity: 0.8; 
     display: inline;
     width: 100vw;
     padding: .5rem;    
